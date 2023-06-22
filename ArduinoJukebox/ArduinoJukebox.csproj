@@ -1,0 +1,75 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows10.0.20348.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>True</UseWindowsForms>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="logo.ico" />
+    <None Remove="Recources\Images\bluetooth.png" />
+    <None Remove="Recources\Images\bluetooth_off.png" />
+    <None Remove="Recources\Images\bluetooth_on.png" />
+    <None Remove="Recources\Images\dance.png" />
+    <None Remove="Recources\Images\happy.png" />
+    <None Remove="Recources\Images\logo.ico" />
+    <None Remove="Recources\Images\menu.png" />
+    <None Remove="Recources\Images\mute.png" />
+    <None Remove="Recources\Images\next.png" />
+    <None Remove="Recources\Images\pause.png" />
+    <None Remove="Recources\Images\play.png" />
+    <None Remove="Recources\Images\previous.png" />
+    <None Remove="Recources\Images\random.png" />
+    <None Remove="Recources\Images\repeat.png" />
+    <None Remove="Recources\Images\setting.png" />
+    <None Remove="Recources\Images\stop.png" />
+    <None Remove="Recources\Images\unmute.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ArduinoConnect" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="logo.ico" />
+    <Resource Include="Recources\Images\bluetooth.png" />
+    <Resource Include="Recources\Images\bluetooth_off.png" />
+    <Resource Include="Recources\Images\bluetooth_on.png" />
+    <Resource Include="Recources\Images\dance.png" />
+    <Resource Include="Recources\Images\happy.png" />
+    <Resource Include="Recources\Images\logo.ico" />
+    <Resource Include="Recources\Images\menu.png" />
+    <Resource Include="Recources\Images\repeat.png" />
+    <Resource Include="Recources\Images\setting.png" />
+    <Resource Include="Recources\Images\unmute.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Recources\Images\mute.png" />
+    <Resource Include="Recources\Images\next.png" />
+    <Resource Include="Recources\Images\pause.png" />
+    <Resource Include="Recources\Images\play.png" />
+    <Resource Include="Recources\Images\previous.png" />
+    <Resource Include="Recources\Images\random.png" />
+    <Resource Include="Recources\Images\stop.png" />
+  </ItemGroup>
+
+</Project>

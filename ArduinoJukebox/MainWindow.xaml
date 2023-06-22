@@ -1,0 +1,18 @@
+﻿<Window x:Class="ArduinoJukebox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ArduinoJukebox" xmlns:vm="clr-namespace:ArduinoJukebox.MVVM.ViewModel"
+        mc:Ignorable="d"
+    Icon="/Recources/Images/logo.ico"
+        Title="Mbot Jukebox"
+         Style="{StaticResource ModernWindowStyleLight}">
+    <Window.DataContext>
+        <vm:MainViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <ContentControl Grid.Column="1"
+                            Content="{Binding CurrentView}"/>
+    </Grid>
+</Window>

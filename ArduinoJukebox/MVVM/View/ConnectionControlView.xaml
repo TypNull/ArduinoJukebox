@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="ArduinoJukebox.MVVM.View.ConnectionControlView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:vm="clr-namespace:ArduinoJukebox.MVVM.ViewModel"
+             mc:Ignorable="d"
+             d:DesignHeight="50"
+             d:DesignWidth="50"
+             MaxHeight="30"
+             MaxWidth="30">
+    <UserControl.DataContext>
+        <vm:ConnectionControlViewModel />
+    </UserControl.DataContext>
+    <Image RenderOptions.BitmapScalingMode="Fant">
+        <Image.Style>
+            <Style TargetType="{x:Type Image}">
+                <Setter Property="Source"
+                    Value="/Recources/Images/bluetooth_off.png" />
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding IsEnabeld}"
+                                 Value="true">
+                        <Setter Property="Source"
+                            Value="/Recources/Images/bluetooth_on.png" />
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+        </Image.Style>
+    </Image>
+
+
+</UserControl>
