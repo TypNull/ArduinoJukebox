@@ -16,10 +16,6 @@ All songs based on https://github.com/robsoncouto/arduino-songs
 - Mute
 - Customisable button
 
-## Tech
-It is available on GitHub:
-Repository: https://github.com/Meyn1/ArduinoJukebox
-
 ## How to use
 
 1. Download release: Install or portable version.
